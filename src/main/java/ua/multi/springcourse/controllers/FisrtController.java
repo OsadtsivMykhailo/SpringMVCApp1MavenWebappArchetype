@@ -44,21 +44,21 @@ public class FisrtController {
 
         //System.out.println("Good bye, " + name + " " + surname);
         if(action.equals("addition")) {
-            model.addAttribute("message", "Result is: " + (a + b));
+            model.addAttribute("result", "Result is: " + (a + b));
         }
 
         if(action.equals("substraction")) {
-            model.addAttribute("message", "Result is: " + (a - b));
+            model.addAttribute("result", "Result is: " + (a - b));
         }
 
         if(action.equals("multiplication")) {
-            model.addAttribute("message", "Result is: " + (a * b));
+            model.addAttribute("result", "Result is: " + (a * b));
         }
 
         if(action.equals("division")) {
-            model.addAttribute("message", "Result is: " + (a / b));
+            model.addAttribute("result", "Result is: " + (a / b));
         }
-        return "first/goodbye";
+        return "first/calculator";
     }
 
 }
